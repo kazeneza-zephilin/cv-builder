@@ -1,0 +1,121 @@
+/* Main container styles */
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.app h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #212529;
+}
+
+/* Grid layout for form and preview */
+.cv-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Form section styles */
+.form-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove conflicting styles */
+.cv-form {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.cv-form section {
+    margin-bottom: 1.5rem;
+}
+
+/* Form input styles */
+.cv-form input,
+.cv-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styles */
+.cv-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cv-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Preview section styles */
+.preview-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 2rem;
+    padding: 2rem;
+}
+
+/* Entry styles for education and experience */
+.education-entry,
+.experience-entry {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Personal info section styles */
+.personal-info {
+    margin-bottom: 20px;
+}
+
+.personal-info h1 {
+    margin-bottom: 10px;
+}
+
+/* Section spacing */
+.education,
+.experience,
+.skills {
+    margin-bottom: 20px;
+}
+
+/* Skills list styles */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-section {
+        position: static;
+    }
+}
