@@ -1,6 +1,7 @@
 # CV Generator
 
 A simple React application for creating and previewing CVs in real-time.
+Visit site: (https://cv-builder-eosin-six.vercel.app/)[live preview]
 
 ## Features
 
